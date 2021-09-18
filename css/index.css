@@ -1,0 +1,157 @@
+@import "./botones.css";
+/* Variables de fuentes y colores*/
+:root {
+  --baseFont: 'Poppins', sans-serif;
+  --secondFont: 'Oxygen', sans-serif;
+  --titulo1: bold 95px/153.70px var(--baseFont);
+  --titulo2: bold 59px/95px var(--baseFont);
+  --titulo3: bold 48px/77px var(--baseFont);
+  --titulo4: bold 34px/55px var(--baseFont);
+  --titulo5: bold 22px/38px var(--baseFont);
+  --cuerpo1: normal 16px/25px var(--baseFont);
+  --cuerpo0: normal 30px/55px var(--secondFont);
+  --button: bold 16px/22px var(--baseFont);
+  --caption: normal 12px/19px var(--baseFont);
+  --gradient: radial-gradient(25.50% 45.48% at 1.38% 45.50%, #6034fdc5 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(150deg, #85e5fd 5%, #3549fa 95%);
+  --colorPurple:  #3509a3;
+  --colorGreen: #42E2B8;
+  --colorWhite: #fff;
+}
+/* Body General */
+body {
+  font: var(--cuerpo1);
+  background: var(--gradient);
+  min-block-size: 100vh;
+  color: var(--colorPurple);
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 84px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+.logo {
+  margin-block-start: 10px;
+  border-radius: 50%;
+}
+/* Profile */
+.profile {
+  padding-block-start: 20px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.photo-profile {
+  text-align: center;
+}
+.photo-profile img {
+  border-radius: 10px;
+}
+.profile h1 {
+  font: var(--titulo3);
+  margin: 0;
+}
+.profile h1 span:nth-of-type(1) {
+  font: var(--titulo4);
+  display: block;
+}
+.social-media {
+  padding-block-end: 24px;
+}
+/* Responsive de Profile */
+@media screen and (min-width: 800px){
+  .profile {
+    display: flex;
+    gap: 32px;
+  }
+  .photo-profile {
+    order: 2;
+    flex: 1;
+    text-align: end;  
+  }
+  .photo-profile img{
+    inline-size: 460px;
+    block-size: 464px;
+  }
+  .description {
+    order: 1;
+    max-inline-size: 455px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .photo-profile img{
+    inline-size: 460px;
+    block-size: 464px;
+  }
+}
+/* Wrapper - Espaciado a los costados */
+.wrapper {
+  max-inline-size: 1158px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  margin: auto;
+}
+/* Menu de Navegacion */
+.nav-menu {
+  display: none;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.nav-menu ul a {
+  color: var(--colorWhite);
+  text-decoration: none;
+  font: var(--button);
+  text-transform: uppercase;
+}
+.nav-menu ul a.active{
+  color: #3509a3;
+}
+@media screen and (min-width: 845px){
+  .nav-menu {
+    display: block;
+  }
+}
+/* Introduccion a Proyectos */
+.intro-projects {
+  padding-block-start: 200px;
+  padding-block-end: 200px;
+}
+.intro-projects h3{
+  font: var(--cuerpo0);
+  text-align: center;
+}
+.intro-projects p{
+  font: var(--titulo5);
+  text-align: center;
+}
+.intro-projects img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+/* Barra de Navegacion de Google */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+border-radius: 0px;
+background: #3f32f3;
+}
+::-webkit-scrollbar-thumb {
+border-radius: 60px;
+background: var(--colorWhite);
+}
