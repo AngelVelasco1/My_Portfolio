@@ -65,7 +65,7 @@ body {
   padding-block-end: 24px;
 }
 /* Responsive de Profile */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 845px){
   .profile {
     display: flex;
     gap: 32px;
@@ -120,7 +120,7 @@ body {
     display: block;
   }
 }
-/* Introduccion a Proyectos */
+/* Introduccion a Proyectos - Testimonios*/
 .intro-projects {
   padding-block-start: 200px;
   padding-block-end: 200px;
@@ -139,8 +139,28 @@ body {
   text-align: center;
 }
 
+.testimonies-description{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+}
+.testimonies-title{
+  align-self: flex-start;
+  background: var(--colorPurple);
+  color: var(--colorWhite);
+  font: var(--titulo5);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 8px;
+  padding-block-end: 8px;
+  margin-inline-start: 6px;
+  box-shadow: -6px 6px 0 var(--colorWhite);
+  text-decoration: none;
+}
+@media screen and (min-width: 845px) {
 
+}
 
 
 /* Barra de Navegacion de Google */
