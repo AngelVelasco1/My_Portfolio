@@ -185,7 +185,13 @@ body {
 .imagen-port:hover .hover-galeria {
   transform: scale(1);
 }
-
+@media screen and (max-width: 650px){
+  .imagen-port {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+}
 
 /* Introduccion a Proyectos - Testimonios*/
 .intro-projects {
