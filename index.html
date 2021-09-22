@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +17,7 @@
   <div class="wrapper">
     <header class="header">
       <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
-      <nav class="nav-menu">
+      <nav aria-label= "main-navegation" class="nav-menu">
         <ul>
           <li>
             <a class= "active" href="#main">Quien Soy?</a>
@@ -37,7 +36,7 @@
       <button class="button dos">Curriculum</button>
     </header>
     <!-- Quien Soy? -->
-    <section class="profile" id= "main">
+    <section aria-label= "main" class="profile" id= "main">
       <div class="photo-profile">
         <img src="images/foto-profile.png" width="338" height="330"/>
       </div>
@@ -48,12 +47,12 @@
         </h1>
         <p>Fronted Developer Junior amante del diseño y la experiencia de usuario, amo realizar diseños que atraigan e
           inspiren a las personas</p>
-
+          
         <div class="social-media">
           <a class="button-icon" href="tel:3118490251">
             <img src="icons/icon-phone.svg" /></a>
 
-          <a class="button-icon" href="">
+          <a class="button-icon" href="mailto:angelgg2020@outlook.com">
             <img src="icons/icon-mail.svg" /></a>
 
             <a class="button-icon" href="https://github.com/AngelVelasco1" target= "_blank">
@@ -68,8 +67,6 @@
         <a href="" class="button">Descargar Curriculum</a>
       </div>
     </section>
-    
-    
     <!-- Habilidades (Por Terminar) -->
     <section class= "habilities" id= "habilities">
       <h3>Habilidades</h3>
@@ -99,7 +96,7 @@
                 <img src="./images/bootstrap.svg"
                     alt="">
                 <div class="hover-galeria">
-                   <p>BOOTSTRAP<br>(3 meses de experiencia)</p>
+                    <p>BOOTSTRAP<br>(3 meses de experiencia)</p>
                 </div>
           </div>
         </section>
@@ -144,6 +141,29 @@
         <a class= "button" href="" target= "_blank">Enlace Proyecto</a>
       </div>
     </div>
+    <!-- Footer - Pie de pagina -->
+    <footer class= "footer">
+      <div class="footer-logo">
+        <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
+      </div>
+      <div class="social-footer">
+        <a class="button-icon" href="tel:3118490251">
+          <img src="icons/icon-phone.svg" /></a>
+    
+        <a class="button-icon" href="mailto:angelgg2020@outlook.com">
+          <img src="icons/icon-mail.svg" /></a>
+    
+          <a class="button-icon" href="https://github.com/AngelVelasco1" target= "_blank">
+            <img src="icons/icon-github.svg" /></a>
+    
+          <a class="button-icon" href="https://www.linkedin.com/in/angel-david-velasco-b67555210/" target= "_blank">
+            <img src="icons/icon-linkendin.svg" /></a>
+      </div>
+      <div class= "footer-copy">
+        <p>Hecho con el 💙 por Angel Velasco. </p>
+        <p>©Copyright 2021 - Todos los derechos reservados</p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
