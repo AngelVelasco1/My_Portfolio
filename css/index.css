@@ -34,9 +34,9 @@ body {
   position: sticky;
   top: 0;
   backdrop-filter: blur(8px);
+  z-index: 1; 
 }
 .header-content {
-  z-index: 1; 
   display: flex;
   justify-content: space-between;
   align-items: center;
