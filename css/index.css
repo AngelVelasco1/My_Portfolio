@@ -1,4 +1,5 @@
 @import "./botones.css";
+
 /* Variables de fuentes y colores*/
 :root {
   --baseFont: 'Poppins', sans-serif;
@@ -16,12 +17,16 @@
   --colorPurple:  #3509a3;
   --colorGreen: #42E2B8;
   --colorWhite: #fff;
-}
-:root{
-  scroll-behavior:smooth;
 
 }
 /* Body General */
+/* Wrapper - Espaciado a los costados */
+.wrapper {
+  max-inline-size: 1158px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  margin: auto;
+}
 body {
   font: var(--cuerpo1);
   background: var(--gradient);
@@ -37,12 +42,11 @@ body {
   z-index: 1; 
 }
 .header-content {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   block-size: 85px;
- 
 }
 .logo {
   margin-block-start: 10px;
@@ -105,13 +109,7 @@ body {
     block-size: 464px;
   }
 }
-/* Wrapper - Espaciado a los costados */
-.wrapper {
-  max-inline-size: 1158px;
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
-  margin: auto;
-}
+
 /* Menu de Navegacion */
 .nav-menu {
   display: none;
@@ -127,8 +125,21 @@ body {
   font: var(--button);
   text-transform: uppercase;
 }
-.nav-menu ul a.active{
+.nav-menu ul a.main:hover{
   color: #3509a3;
+  text-decoration: underline;
+}
+.nav-menu ul a.habilities:hover{
+  color: #3509a3;
+  text-decoration: underline;
+}
+.nav-menu ul a.projects:hover{
+  color: #3509a3;
+  text-decoration: underline;
+}
+.nav-menu ul a.contact:hover{
+  color: #3509a3;
+  text-decoration: underline;
 }
 @media screen and (min-width: 845px){
   .nav-menu {
@@ -267,11 +278,9 @@ justify-content: center;
   flex-direction: column;
   gap: 16px;
   max-inline-size: 550px;
-  margin: 0 auto;
+  margin: auto;
 }
-.form {
-  margin-block-end: 80px;
-}
+
 .form-title {
   align-self: flex-start;
   background: var(--colorPurple);
@@ -333,6 +342,8 @@ justify-content: center;
 .footer .social-footer {
   justify-content: center;
   padding: 0;
+  margin-block-start: 25px
+
 }
 .footer-logo {
   display: none;
@@ -350,17 +361,19 @@ justify-content: center;
   .footer .social-footer {
     order: 3;
     padding: 0;
+    margin: 0;
+    text-align:center
   }
 }
 @media screen and (min-width: 1024px){
   .footer-copy {
     display: flex;
     gap: 6px;
-
   }
   .footer {
-    margin-block-start: 30px;
-    margin-block-end: 30px;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+
   }
 }
 /* Barra de Navegacion de Google */
