@@ -31,14 +31,17 @@ body {
 }
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+.header-content {
   z-index: 1; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   block-size: 85px;
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(8px);
+ 
 }
 .logo {
   margin-block-start: 10px;
@@ -245,6 +248,7 @@ justify-content: center;
     align-items: center;
     padding-block-start: 80px;
     padding-block-end: 80px;
+    gap: 34px;
   }
   .testimonies-description {
     flex: 1;
@@ -255,8 +259,67 @@ justify-content: center;
     text-align: center;
   }
 }
+/* Formulario */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-inline-size: 550px;
+  margin: 0 auto;
+}
+.form {
+  margin-block-end: 80px;
+}
+.form-title {
+  align-self: flex-start;
+  background: var(--colorPurple);
+  color: var(--colorWhite);
+  font: var(--titulo5);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 8px;
+  padding-block-end: 8px;
+  box-shadow: -6px 6px 0 var(--colorWhite);
+  text-decoration: none;
+  margin: 0;
+}
+.form p{
+  color: var(--colorWhite);
+  text-align: center;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  font: var(--button);
+}
+.form input, .form textarea {
+  border: 2px solid #180081;
+  border-radius: 9px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  padding-block-end: 12px;
+  padding-block-start: 12px;
+  font: var(--cuerpo1);
+  margin-block-start: 8px;
+}
+@media screen and (min-width: 800px) {
+  .form-title {
+    align-self: flex-start;
+    background: var(--colorPurple);
+    color: var(--colorWhite);
+    font: var(--titulo5);
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-block-end: 8px;
+    box-shadow: -6px 6px 0 var(--colorWhite);
+    align-self: stretch;
+    text-align: center;
+  }
+  
+}
 /* Footer- Pie de Pagina */
-.footer {
+.footer-content {
   color: var(--colorWhite);
   text-align: center;
 }
@@ -273,7 +336,7 @@ justify-content: center;
   display: none;
 }
 @media screen and (min-width: 800px){
-  .footer {
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -294,8 +357,8 @@ justify-content: center;
 
   }
   .footer {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
+    margin-block-start: 30px;
+    margin-block-end: 30px;
   }
 }
 /* Barra de Navegacion de Google */

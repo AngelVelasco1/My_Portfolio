@@ -14,27 +14,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+        <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
+        <nav aria-label= "main-navegation" class="nav-menu">
+          <ul>
+            <li>
+              <a class= "active" href="#main">Quien Soy?</a>
+            </li>
+            <li>
+              <a href= "#habilities">Habilidades</a>
+            </li>
+            <li>
+              <a href= "#projects">Proyectos</a>
+            </li>
+            <li>
+              <a href= "#contact">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button dos">Curriculum</button>  
+      </div>
+    </div>
+    
+  </header>
   <div class="wrapper">
-    <header class="header">
-      <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
-      <nav aria-label= "main-navegation" class="nav-menu">
-        <ul>
-          <li>
-            <a class= "active" href="#main">Quien Soy?</a>
-          </li>
-          <li>
-            <a href= "#habilities">Habilidades</a>
-          </li>
-          <li>
-            <a href= "#projects">Proyectos</a>
-          </li>
-          <li>
-            <a href= "#contact">Hablemos</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button dos">Curriculum</button>
-    </header>
     <!-- Quien Soy? -->
     <section aria-label= "main" class="profile" id= "main">
       <div class="photo-profile">
@@ -141,27 +146,54 @@
         <a class= "button" href="" target= "_blank">Enlace Proyecto</a>
       </div>
     </div>
+    <!-- Formulario de Contacto -->
+    <form action="" method= "GET" class= "form" id= "contact">
+      <div class="form">
+<div class="form-content">
+  <h2 class= "form-title">Hablemos</h2>
+  <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+  <label for= "form-nombre">
+    Nombre Completo
+    <input required name= "nombre" id= "form-nombre" type="text" placeholder="Ana">
+  </label>
+
+  <label for= "form-email">
+    Correo Electronico
+    <input required name= "email" id= "form-email" type="email" placeholder="Ana@example.com">
+  </label>
+
+  <label for= "form-mensaje">
+    Mensaje
+    <textarea required placeholder= "Escribeme" name="mensaje" id="form-mensaje" cols="30" rows="7"></textarea>
+
+  </label>
+  <button class= "button" type= "submit">Enviar Mensaje</button>
+</div>
+    </form>
+
     <!-- Footer - Pie de pagina -->
     <footer class= "footer">
-      <div class="footer-logo">
-        <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
-      </div>
-      <div class="social-footer">
-        <a class="button-icon" href="tel:3118490251">
-          <img src="icons/icon-phone.svg" /></a>
-    
-        <a class="button-icon" href="mailto:angelgg2020@outlook.com">
-          <img src="icons/icon-mail.svg" /></a>
-    
-          <a class="button-icon" href="https://github.com/AngelVelasco1" target= "_blank">
-            <img src="icons/icon-github.svg" /></a>
-    
-          <a class="button-icon" href="https://www.linkedin.com/in/angel-david-velasco-b67555210/" target= "_blank">
-            <img src="icons/icon-linkendin.svg" /></a>
-      </div>
-      <div class= "footer-copy">
-        <p>Hecho con el 💙 por Angel Velasco. </p>
-        <p>©Copyright 2021 - Todos los derechos reservados</p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img class= "logo" src="./images/logo.png" width="80" alt="LOGO" />
+        </div>
+        <div class="social-footer">
+          <a class="button-icon" href="tel:3118490251">
+            <img src="icons/icon-phone.svg" /></a>
+      
+          <a class="button-icon" href="mailto:angelgg2020@outlook.com">
+            <img src="icons/icon-mail.svg" /></a>
+      
+            <a class="button-icon" href="https://github.com/AngelVelasco1" target= "_blank">
+              <img src="icons/icon-github.svg" /></a>
+      
+            <a class="button-icon" href="https://www.linkedin.com/in/angel-david-velasco-b67555210/" target= "_blank">
+              <img src="icons/icon-linkendin.svg" /></a>
+        </div>
+        <div class= "footer-copy">
+          <p>Hecho con el 💙 por Angel Velasco. </p>
+          <p>©Copyright 2021 - Todos los derechos reservados</p>
+        </div>
       </div>
     </footer>
   </div>
