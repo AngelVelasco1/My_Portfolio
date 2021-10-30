@@ -1,0 +1,36 @@
+/* Botones Header */
+.button {
+  background: var(--colorPurple);
+  color: var(--colorWhite);
+  font: var(--button);
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  border: 2px solid var(--colorWhite);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  
+}
+.button.dos {
+  background: unset;
+  color: var(--colorPurple);
+  border: 2px solid var(--colorPurple)
+}
+/* Botones Con Iconos */
+.button-icon {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--colorPurple);
+  background: var(--colorWhite);
+  text-decoration: none;
+  display: inline-block;
+  margin-inline-end: 10px;
+}
+.button-icon img {
+  vertical-align: middle;
+}
