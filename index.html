@@ -1,218 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel David Velasco</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/botones.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Angel David Velasco</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/botones.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="header-content">
-        <img class="logo" src="./images/logo.png" width="80" alt="LOGO" />
-        <nav aria-label="main-navegation" class="nav-menu">
-          <ul>
-            <li>
-              <a class="main" href="#main">Quien Soy?</a>
-            </li>
-            <li>
-              <a class="habilities" href="#habilities">Habilidades</a>
-            </li>
-            <li>
-              <a class="projects" href="#projects">Proyectos</a>
-            </li>
-            <li>
-              <a class="contact" href="#contact">Hablemos</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button dos">Curriculum</button>
-      </div>
-    </div>
-
-  </header>
-  <div class="wrapper">
-    <!-- Quien Soy? -->
-    <section aria-label="main" class="profile" id="main">
-      <div class="photo-profile">
-        <img src="images/foto-profile.png" width="338" height="330" />
-      </div>
-      <div class="description">
-        <h1>
-          <span>Hola!</span>
-          <span>Soy Angel Velasco</span>
-        </h1>
-        <p>Fronted Developer Junior amante del diseño y la experiencia de usuario, amo realizar diseños que atraigan e
-          inspiren a las personas</p>
-
-        <div class="social-media">
-          <a class="button-icon" href="tel:3118490251">
-            <img src="icons/icon-phone.svg" /></a>
-
-          <a class="button-icon" href="mailto:angelgg2020@outlook.com">
-            <img src="icons/icon-mail.svg" /></a>
-
-          <a class="button-icon" href="https://github.com/AngelVelasco1" target="_blank">
-            <img src="icons/icon-github.svg" /></a>
-
-          <a class="button-icon" href="https://www.linkedin.com/in/angel-david-velasco-b67555210/" target="_blank">
-            <img src="icons/icon-linkendin.svg" /></a>
-
-          <a class="button-icon"
-            href="https://www.instagram.com/angel_velascog/?fbclid=IwAR03-RjeIocGviqVKIO8RVpEp1qayr_6goW2OAdGt1z6C2kgFik1bveKuXQ"
-            target="_blank">
-            <img src=" icons/icon-instagram.svg" /></a>
-        </div>
-        <a href="" class="button">Descargar Curriculum</a>
-      </div>
-    </section>
-    <!-- Habilidades (Por Terminar) -->
-    <section class="habilities" id="habilities">
-      <h3>Habilidades</h3>
-      <div class="contenedor">
-        <div class="galeria-port">
-          <div class="imagen-port">
-            <img src="./images/html.svg" alt="">
-            <div class="hover-galeria">
-              <p>HTML5 <br>(8 meses de experiencia)</p>
-            </div>
-          </div>
-          <div class="imagen-port">
-            <img src="./images/css.svg" alt="">
-            <div class="hover-galeria">
-              <p>CSS3 <br>(3 meses de experiencia)</p>
-            </div>
-          </div>
-          <div class="imagen-port">
-            <img src="./images/js.svg" alt="">
-            <div class="hover-galeria">
-              <p>JAVASCRIPT <br>(1 mes de experiencia)</p>
-            </div>
-          </div>
-          <div class="imagen-port">
-            <img src="./images/bootstrap.svg" alt="">
-            <div class="hover-galeria">
-              <p>BOOTSTRAP<br>(3 meses de experiencia)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Introduccion a Proyectos -->
-    <section class="intro-projects" id="projects">
-      <h3>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar <br> en proyectos retadores e
-        increíbles</h3>
-      <p>Proyectos Destacados</p>
-      <img src="./icons/arrow-down.svg" alt="">
-    </section>
-    <div class="testimonies">
-      <div class="testimonies-image">
-        <img class= "img_proyecto1" src="./images/proyecto_1.png" alt="">
-      </div>
-      <div class="testimonies-description">
-        <a class="testimonies-title" href="">Game Arcade</a>
-        <p> This is a informative website dedicated to a technology company called mosros. This company specializes in
-          game development. On this page you can see all the features of their games and download them. The project is
-          still in process... </p>
-        <a class="button dos" href="https://github.com/AngelVelasco1/Adversite-Game" target="_blank">Ver Codigo</a>
-        <a class="button" href="https://angelvelasco1.github.io/Adversite-Game/" target="_blank">Enlace Proyecto</a>
-      </div>
-    </div>
-
-    <div class="testimonies">
-      <div class="testimonies-image">
-        <img class= "img_proyecto2" src="images/proyecto_2.png" alt="">
-      </div>
-      <div class="testimonies-description">
-        <a class="testimonies-title" href="">Video Player</a>
-        <p>This is a project about a simple video player, builded in HTML, CSS and JavaScript.</p>
-        <a class="button dos" href="https://github.com/AngelVelasco1/Video_Player" target="_blank">Ver Codigo</a>
-        <a class="button" href="https://angelvelasco1.github.io/Video_Player/" target="_blank">Enlace Proyecto</a>
-      </div>
-    </div>
-
-    <div class="testimonies">
-      <div class="testimonies-image">
-        <img class= "img_proyecto1" src="images/proyecto_3.png" alt="">
-      </div>
-      <div class="testimonies-description">
-        <a class="testimonies-title" href="">Doggies</a>
-        <p>Informative Site about all of dogs. It is an interactive and very visual site. Made in Html, Css and
-          Javascript. </p>
-        <a class="button dos" href="https://github.com/AngelVelasco1/Website-Dogs" target="_blank">Ver Codigo</a>
-        <a class="button" href="https://angelvelasco1.github.io/Website-Dogs/" target="_blank">Enlace Proyecto</a>
-      </div>
-    </div>
-    <!-- Formulario de Contacto -->
-    <form action= "#" method="GET" class="form" id="contact">
-      <div class="form">
-        <div class="form-content">
-          <h2 class="form-title">Hablemos</h2>
-          <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
-          <label for="form-nombre">
-            Nombre Completo
-            <input required name="nombre" id="form-nombre" type="text" placeholder= "Ana">
-          </label>
-
-          <label for="form-email">
-            Correo Electronico
-            <input required name="email" id="form-email" type="email" placeholder="Ana@example.com">
-          </label>
-
-          <label for="form-mensaje">
-            Mensaje
-            <textarea required placeholder="Escribeme" name="mensaje" id="form-mensaje" cols="30" rows="7"></textarea>
-
-          </label>
-          <button class="button" type="submit">Enviar Mensaje</button>
-        </div>
-    </form>
-
-    <!-- Footer - Pie de pagina -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-logo">
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
           <img class="logo" src="./images/logo.png" width="80" alt="LOGO" />
-        </div>
-        <div class="social-footer">
-          <a class="button-icon" href="tel:3118490251">
-            <img src="icons/icon-phone.svg" /></a>
-
-          <a class="button-icon" href="mailto:angelgg2020@outlook.com">
-            <img src="icons/icon-mail.svg" /></a>
-
-          <a class="button-icon" href="https://github.com/AngelVelasco1" target="_blank">
-            <img src="icons/icon-github.svg" /></a>
-
-          <a class="button-icon" href="https://www.linkedin.com/in/angel-david-velasco-b67555210/" target="_blank">
-            <img src="icons/icon-linkendin.svg" /></a>
-        </div>
-        <div class="footer-copy">
-          <p>Hecho con el 💙 por Angel Velasco. </p>
-          <p>©Copyright 2021 - Todos los derechos reservados</p>
+          <nav aria-label="main-navegation" class="nav-menu">
+            <ul>
+              <li>
+                <a class="main" href="#main">Quien Soy?</a>
+              </li>
+              <li>
+                <a class="habilities" href="#habilities">Habilidades</a>
+              </li>
+              <li>
+                <a class="projects" href="#projects">Proyectos</a>
+              </li>
+              <li>
+                <a class="contact" href="#contact">Hablemos</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button dos">Curriculum</button>
         </div>
       </div>
-    </footer>
-  </div>
-  <!-- Javascript para funcionalidad del formulario -->
-  <script>
-    const $form= document.querySelector('#contact')
-    $form.addEventListener('submit', handleSubmit)
+    </header>
+    <div class="wrapper">
+      <!-- Quien Soy? -->
+      <section aria-label="main" class="profile" id="main">
+        <div class="photo-profile">
+          <img src="images/foto-profile.png" width="338" height="330" />
+        </div>
+        <div class="description">
+          <h1>
+            <span>Hola!</span>
+            <span>Soy Angel Velasco</span>
+          </h1>
+          <p>
+            Fronted Developer Junior amante del diseño y la experiencia de
+            usuario, amo realizar diseños que atraigan e inspiren a las personas
+          </p>
 
-    function handleSubmit(event) {
-      /* Evento para que no recargue la pagina al enviar el formulario */
-      event.preventDefault()
-    }
-  </script>
-</body>
+          <div class="social-media">
+            <a class="button-icon" href="tel:3118490251">
+              <img src="icons/icon-phone.svg"
+            /></a>
+
+            <a class="button-icon" href="mailto:angelgg2020@outlook.com">
+              <img src="icons/icon-mail.svg"
+            /></a>
+
+            <a
+              class="button-icon"
+              href="https://github.com/AngelVelasco1"
+              target="_blank"
+            >
+              <img src="icons/icon-github.svg"
+            /></a>
+
+            <a
+              class="button-icon"
+              href="https://www.linkedin.com/in/angel-david-velasco-b67555210/"
+              target="_blank"
+            >
+              <img src="icons/icon-linkendin.svg"
+            /></a>
+
+            <a
+              class="button-icon"
+              href="https://www.instagram.com/angel_velascog/?fbclid=IwAR03-RjeIocGviqVKIO8RVpEp1qayr_6goW2OAdGt1z6C2kgFik1bveKuXQ"
+              target="_blank"
+            >
+              <img src=" icons/icon-instagram.svg"
+            /></a>
+          </div>
+          <a href="" class="button">Descargar Curriculum</a>
+        </div>
+      </section>
+      <!-- Habilidades (Por Terminar) -->
+      <section class="habilities" id="habilities">
+        <h3>Habilidades</h3>
+        <div class="contenedor">
+          <div class="galeria-port">
+            <div class="imagen-port">
+              <img src="./images/html.svg" alt="" />
+              <div class="hover-galeria">
+                <p>HTML5 <br />(8 meses de experiencia)</p>
+              </div>
+            </div>
+            <div class="imagen-port">
+              <img src="./images/css.svg" alt="" />
+              <div class="hover-galeria">
+                <p>CSS3 <br />(3 meses de experiencia)</p>
+              </div>
+            </div>
+            <div class="imagen-port">
+              <img src="./images/js.svg" alt="" />
+              <div class="hover-galeria">
+                <p>JAVASCRIPT <br />(1 mes de experiencia)</p>
+              </div>
+            </div>
+            <div class="imagen-port">
+              <img src="./images/bootstrap.svg" alt="" />
+              <div class="hover-galeria">
+                <p>BOOTSTRAP<br />(3 meses de experiencia)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Introduccion a Proyectos -->
+      <section class="intro-projects" id="projects">
+        <h3>
+          A lo largo de mi carrera como Frontend, he tenido el privilegio de
+          trabajar <br />
+          en proyectos retadores e increíbles
+        </h3>
+        <p>Proyectos Destacados</p>
+        <img src="./icons/arrow-down.svg" alt="" />
+      </section>
+      <div class="testimonies">
+        <div class="testimonies-image">
+          <img class="img_proyecto1" src="./images/proyecto_1.png" alt="" />
+        </div>
+        <div class="testimonies-description">
+          <a class="testimonies-title" href="">Game Arcade</a>
+          <p>
+            This is a informative website dedicated to a technology company
+            called mosros. This company specializes in game development. On this
+            page you can see all the features of their games and download them.
+            The project is still in process...
+          </p>
+          <a
+            class="button dos"
+            href="https://github.com/AngelVelasco1/Adversite-Game"
+            target="_blank"
+            >Ver Codigo</a
+          >
+          <a
+            class="button"
+            href="https://angelvelasco1.github.io/Adversite-Game/"
+            target="_blank"
+            >Enlace Proyecto</a
+          >
+        </div>
+      </div>
+
+      <div class="testimonies">
+        <div class="testimonies-image">
+          <img class="img_proyecto2" src="images/proyecto_2.png" alt="" />
+        </div>
+        <div class="testimonies-description">
+          <a class="testimonies-title" href="">Video Player</a>
+          <p>
+            This is a project about a simple video player, builded in HTML, CSS
+            and JavaScript.
+          </p>
+          <a
+            class="button dos"
+            href="https://github.com/AngelVelasco1/Video_Player"
+            target="_blank"
+            >Ver Codigo</a
+          >
+          <a
+            class="button"
+            href="https://angelvelasco1.github.io/Video_Player/"
+            target="_blank"
+            >Enlace Proyecto</a
+          >
+        </div>
+      </div>
+
+      <div class="testimonies">
+        <div class="testimonies-image">
+          <img class="img_proyecto1" src="images/proyecto_3.png" alt="" />
+        </div>
+        <div class="testimonies-description">
+          <a class="testimonies-title" href="">Doggies</a>
+          <p>
+            Informative Site about all of dogs. It is an interactive and very
+            visual site. Made in Html, Css and Javascript.
+          </p>
+          <a
+            class="button dos"
+            href="https://github.com/AngelVelasco1/Website-Dogs"
+            target="_blank"
+            >Ver Codigo</a
+          >
+          <a
+            class="button"
+            href="https://angelvelasco1.github.io/Website-Dogs/"
+            target="_blank"
+            >Enlace Proyecto</a
+          >
+        </div>
+      </div>
+      <!-- Formulario de Contacto -->
+      <form action="#" method="GET" class="form" id="contact">
+        <div class="form">
+          <div class="form-content">
+            <h2 class="form-title">Hablemos</h2>
+            <p>
+              Si está interesado en trabajar conmigo en su próximo proyecto, no
+              dude en ponerse en contacto conmigo.
+            </p>
+            <label for="form-nombre">
+              Nombre Completo
+              <input
+                required
+                name="nombre"
+                id="form-nombre"
+                type="text"
+                placeholder="Ana"
+              />
+            </label>
+
+            <label for="form-email">
+              Correo Electronico
+              <input
+                required
+                name="email"
+                id="form-email"
+                type="email"
+                placeholder="Ana@example.com"
+              />
+            </label>
+
+            <label for="form-mensaje">
+              Mensaje
+              <textarea
+                required
+                placeholder="Escribeme"
+                name="mensaje"
+                id="form-mensaje"
+                cols="30"
+                rows="7"
+              ></textarea>
+            </label>
+            <button class="button" type="submit">Enviar Mensaje</button>
+          </div>
+          <a href="mailto:angelgg2020@outlook.com" id="truco">mail</a>
+        </div>
+      </form>
+
+      <!-- Footer - Pie de pagina -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img class="logo" src="./images/logo.png" width="80" alt="LOGO" />
+          </div>
+          <div class="social-footer">
+            <a class="button-icon" href="tel:3118490251">
+              <img src="icons/icon-phone.svg"
+            /></a>
+
+            <a class="button-icon" href="mailto:angelgg2020@outlook.com">
+              <img src="icons/icon-mail.svg"
+            /></a>
+
+            <a
+              class="button-icon"
+              href="https://github.com/AngelVelasco1"
+              target="_blank"
+            >
+              <img src="icons/icon-github.svg"
+            /></a>
+
+            <a
+              class="button-icon"
+              href="https://www.linkedin.com/in/angel-david-velasco-b67555210/"
+              target="_blank"
+            >
+              <img src="icons/icon-linkendin.svg"
+            /></a>
+          </div>
+          <div class="footer-copy">
+            <p>Hecho con el 💙 por Angel Velasco.</p>
+            <p>©Copyright 2021 - Todos los derechos reservados</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript para funcionalidad del formulario -->
+    <script>
+      const $form= document.querySelector('#contact')
+      const $buttonMail= document.querySelector('#truco')
+      $form.addEventListener('submit', handleSubmit)
+
+      function handleSubmit(event) {
+        /* Evento para que no recargue la pagina al enviar el formulario */
+        event.preventDefault()
+        const formdata = new FormData(this)
+        console.log(formdata.get('nombre'))
+        $buttonMail.setAttribute('href', `mailto:angelgg2020@outlook.com?subject=Nombre: ${formdata.get('nombre')} Correo: ${formdata.get('email')} &body= ${formdata.get('mensaje')}`)
+        $buttonMail.click()
+      }
+    </script>
+  </body>
 </html>

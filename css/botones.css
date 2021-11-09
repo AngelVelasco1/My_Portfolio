@@ -14,7 +14,13 @@
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.button:hover {
+  cursor: pointer;
 }
 .button.dos {
   background: unset;

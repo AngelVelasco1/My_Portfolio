@@ -324,6 +324,9 @@ justify-content: center;
   font: var(--cuerpo1);
   margin-block-start: 8px;
 }
+#truco {
+  opacity: 0;
+}
 @media screen and (min-width: 800px) {
   .form-title {
     align-self: flex-start;
