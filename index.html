@@ -315,7 +315,7 @@
         event.preventDefault()
         const formdata = new FormData(this)
         console.log(formdata.get('nombre'))
-        $buttonMail.setAttribute('href', `mailto:angelgg2020@outlook.com?subject=Nombre: ${formdata.get('nombre')} Correo: ${formdata.get('email')} &body= ${formdata.get('mensaje')}`)
+        $buttonMail.setAttribute('href', `mailto:angelgg2020@outlook.com?subject=Nombre: ${formdata.get('nombre')} Correo: ${formdata.get('email')}&body=${formdata.get('mensaje')}`)
         $buttonMail.click()
       }
     </script>
