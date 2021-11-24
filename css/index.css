@@ -1,6 +1,7 @@
+/*! Importaciones */
 @import "./botones.css";
 
-/* Variables de fuentes y colores*/
+/*! Variables de fuentes y colores */
 :root {
   --baseFont: 'Poppins', sans-serif;
   --secondFont: 'Oxygen', sans-serif;
@@ -19,14 +20,14 @@
   --colorWhite: #fff;
 
 }
-/* Body General */
-/* Wrapper - Espaciado a los costados */
+/*! Wrapper - Espaciado de los costados */
 .wrapper {
   max-inline-size: 1158px;
   padding-inline-start: 16px;
   padding-inline-end: 16px;
   margin: auto;
 }
+/*! Body General */
 body {
   font: var(--cuerpo1);
   background: var(--gradient);
@@ -34,7 +35,7 @@ body {
   color: var(--colorPurple);
   margin: 0;
 }
-/* Header */
+/** Header */
 .header {
   position: sticky;
   top: 0;
@@ -52,7 +53,7 @@ body {
   margin-block-start: 10px;
   border-radius: 50%;
 }
-/* Profile */
+/** Profile */
 .profile {
   padding-block-start: 20px;
 }
@@ -83,7 +84,7 @@ body {
   display: flex;
   gap: 16px;
 }
-/* Responsive de Profile */
+/** Responsive de Profile */
 @media screen and (min-width: 845px){
   .profile {
     display: flex;
@@ -109,8 +110,7 @@ body {
     block-size: 464px;
   }
 }
-
-/* Menu de Navegacion */
+/** Menu - Barra de Navegacion */
 .nav-menu {
   display: none;
 }
@@ -146,7 +146,7 @@ body {
     display: block;
   }
 }
-/* Habilidades */
+/** Habilidades */
 .habilities {
   z-index: 3;
   padding-block-start: 120px;
@@ -164,17 +164,16 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .imagen-port{
-  width: 40%;
+  width: 30%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   
 }
 .imagen-port > img{
-  width: 80%;
-  height: 80%;
+  width: 92%;
+  height: 92%;
   object-fit: cover;
   display: block;
   text-align: end;
@@ -183,8 +182,8 @@ body {
 }
 .hover-galeria{
   position: absolute;
-  width: 82%;
-  height: 82%;
+  width: 92%;
+  height: 92%;
   top: 0;
   transform: scale(0);
   background: var(--colorPurple);
@@ -204,15 +203,15 @@ body {
 .imagen-port:hover .hover-galeria {
   transform: scale(1);
 }
+/** Responsive de Habilidades */
 @media screen and (max-width: 650px){
   .imagen-port {
-    width: 85%;
-display: flex;
-justify-content: center;
-
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  }
 }
-}
-/* Introduccion a Proyectos - Testimonios*/
+/** Introduccion a Proyectos */
 .intro-projects {
   padding-block-start: 100px;
   padding-block-end: 100px;
@@ -239,7 +238,7 @@ justify-content: center;
   max-block-size: 100%;
   border-radius: 10px;
 }
-
+/** Testimonios de proyectos */
 .testimonies {
   padding-block-start: 50px;
   padding-block-end: 50px;
@@ -251,8 +250,7 @@ justify-content: center;
   text-align: justify;
 }
 .testimonies-image img{
-  /* Imagenes de proyecto sin salirse de pantalla */
-  max-inline-size: 100%;
+  max-inline-size: 100%; /*! Margen de los proyectos */
 }
 .testimonies-title{
   align-self: flex-start;
@@ -266,6 +264,7 @@ justify-content: center;
   box-shadow: -6px 6px 0 var(--colorWhite);
   text-decoration: none;
 }
+/** Responsive de testimonios  */
 @media screen and (min-width: 800px) {
   .testimonies {
     display: flex;
@@ -283,7 +282,7 @@ justify-content: center;
     text-align: center;
   }
 }
-/* Formulario */
+/** Formulario de Contacto */
 .form-content {
   display: flex;
   flex-direction: column;
@@ -291,7 +290,6 @@ justify-content: center;
   max-inline-size: 550px;
   margin: auto;
 }
-
 .form-title {
   align-self: flex-start;
   background: var(--colorPurple);
@@ -324,9 +322,10 @@ justify-content: center;
   font: var(--cuerpo1);
   margin-block-start: 8px;
 }
-#truco {
+#envio_formulario {
   opacity: 0;
 }
+/** Responsive de formulario */
 @media screen and (min-width: 800px) {
   .form-title {
     align-self: flex-start;
@@ -343,7 +342,7 @@ justify-content: center;
   }
   
 }
-/* Footer- Pie de Pagina */
+/** Footer- Pie de Pagina */
 .footer-content {
   color: var(--colorWhite);
   text-align: center;
@@ -362,6 +361,7 @@ justify-content: center;
 .footer-logo {
   display: none;
 }
+/** Responsive de footer */
 @media screen and (min-width: 800px){
   .footer-content {
     display: flex;
@@ -390,15 +390,15 @@ justify-content: center;
 
   }
 }
-/* Barra de Navegacion de Google */
+/** Personalizacion de Barra de Navegacion */
 ::-webkit-scrollbar {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
-border-radius: 0px;
+  border-radius: 0px;
 background: #3f32f3;
 }
 ::-webkit-scrollbar-thumb {
-border-radius: 60px;
-background: var(--colorWhite);
+  border-radius: 60px;
+  background: var(--colorWhite);
 }

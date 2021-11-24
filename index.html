@@ -108,25 +108,37 @@
             <div class="imagen-port">
               <img src="./images/html.svg" alt="" />
               <div class="hover-galeria">
-                <p>HTML5 <br />(8 meses de experiencia)</p>
+                <p>HTML5 Avanzado</p>
               </div>
             </div>
             <div class="imagen-port">
               <img src="./images/css.svg" alt="" />
               <div class="hover-galeria">
-                <p>CSS3 <br />(3 meses de experiencia)</p>
+                <p>CSS3 Intermedio</p>
               </div>
             </div>
             <div class="imagen-port">
               <img src="./images/js.svg" alt="" />
               <div class="hover-galeria">
-                <p>JAVASCRIPT <br />(1 mes de experiencia)</p>
+                <p>JAVASCRIPT Basico</p>
+              </div>
+            </div>
+            <div class="imagen-port">
+              <img src="./images/typescript.svg" alt="" />
+              <div class="hover-galeria">
+                <p>TypeScript Basico</p>
+              </div>
+            </div>
+            <div class="imagen-port">
+              <img src="./images/angular.svg" alt="" />
+              <div class="hover-galeria">
+                <p>Angular Basico</p>
               </div>
             </div>
             <div class="imagen-port">
               <img src="./images/bootstrap.svg" alt="" />
               <div class="hover-galeria">
-                <p>BOOTSTRAP<br />(3 meses de experiencia)</p>
+                <p>BOOTSTRAP Avanzado</p>
               </div>
             </div>
           </div>
@@ -262,7 +274,7 @@
             </label>
             <button class="button" type="submit">Enviar Mensaje</button>
           </div>
-          <a href="mailto:angelgg2020@outlook.com" id="truco">mail</a>
+          <a href="mailto:angelgg2020@outlook.com" id="envio_formulario">mail</a>
         </div>
       </form>
 
@@ -274,28 +286,26 @@
           </div>
           <div class="social-footer">
             <a class="button-icon" href="tel:3118490251">
-              <img src="icons/icon-phone.svg"
-            /></a>
+              <img src="icons/icon-phone.svg"/>
+            </a>
 
             <a class="button-icon" href="mailto:angelgg2020@outlook.com">
-              <img src="icons/icon-mail.svg"
-            /></a>
+              <img src="icons/icon-mail.svg"/>
+            </a>
 
             <a
               class="button-icon"
               href="https://github.com/AngelVelasco1"
-              target="_blank"
-            >
-              <img src="icons/icon-github.svg"
-            /></a>
+              target="_blank">
+              <img src="icons/icon-github.svg"/>
+            </a>
 
             <a
               class="button-icon"
               href="https://www.linkedin.com/in/angel-david-velasco-b67555210/"
-              target="_blank"
-            >
-              <img src="icons/icon-linkendin.svg"
-            /></a>
+              target="_blank">
+              <img src="icons/icon-linkendin.svg"/>
+            </a>
           </div>
           <div class="footer-copy">
             <p>Hecho con el 💙 por Angel Velasco.</p>
@@ -307,16 +317,15 @@
     <!-- Javascript para funcionalidad del formulario -->
     <script>
       const $form= document.querySelector('#contact')
-      const $buttonMail= document.querySelector('#truco')
+      const $buttonMail= document.querySelector('#envio_formulario')
       $form.addEventListener('submit', handleSubmit)
 
       function handleSubmit(event) {
-        /* Evento para que no recargue la pagina al enviar el formulario */
-        event.preventDefault()
-        const formdata = new FormData(this)
-        console.log(formdata.get('nombre'))
-        $buttonMail.setAttribute('href', `mailto:angelgg2020@outlook.com?subject=Nombre: ${formdata.get('nombre')} Correo: ${formdata.get('email')}&body=${formdata.get('mensaje')}`)
-        $buttonMail.click()
+        event.preventDefault(); /* Evento para que no recargue la pagina al enviar el formulario */
+        const formdata = new FormData(this);
+        console.log(formdata.get('nombre'));
+        $buttonMail.setAttribute('href', `mailto:angelgg2020@outlook.com?subject=Nombre: ${formdata.get('nombre')} Correo: ${formdata.get('email')}&body=${formdata.get('mensaje')}`);
+        $buttonMail.click();
       }
     </script>
   </body>
