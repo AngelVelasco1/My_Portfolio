@@ -1,32 +1,85 @@
 /* Botones Header */
 .button {
-  background: var(--colorPurple);
+  background: var(--colorBlue);
   color: var(--colorWhite);
   font: var(--button);
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   padding-block-start: 20px;
   padding-block-end: 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-transform: uppercase;
   border: none;
   border: 2px solid var(--colorWhite);
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  transition: all 0.45s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  
+}
+.button:hover {
+  cursor: pointer;
+  background-color: var(--colorGreen);
+  box-shadow: -8px 8px 0px 0px var(--colorBlack);
+  color: var(--colorBlack);
+  border: 3px solid var(--colorBlack);
+  padding-block-end: 24px;
+}
+.tres {
+    background: var(--colorBlue);
+  color: var(--colorGrayLight);
+  font: var(--button);
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: none;
+  border: 2px solid var(--colorGrayLight);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.45s ease-in-out;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-.button:hover {
-  cursor: pointer;
+.tres:hover {
+  transform: scale(1.05, 1.05)
 }
-.button.dos {
+.dos {
+  cursor: pointer;
   background: unset;
   color: var(--colorPurple);
-  border: 2px solid var(--colorPurple)
+  border: 2px solid var(--colorPurple);
+  font: var(--button);
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.45s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
+.dos:hover {
+  background: var(--colorBlue);
+  color: var(--colorWhite);
+  border: 2px solid var(--colorWhite)
+}
+
 /* Botones Con Iconos */
 .button-icon {
   padding: 10px;
