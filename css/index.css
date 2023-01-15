@@ -10,6 +10,7 @@
   --titulo3: bold 52px/70px var(--baseFont);
   --titulo4: bold 38px/55px var(--baseFont);
   --titulo5: bold 22px/38px var(--baseFont);
+  --titulo6: bold 18px/32px var(--baseFont);
   --cuerpo1: normal 16px/25px var(--baseFont);
   --cuerpo0: normal 30px/55px var(--secondFont);
   --button: bold 16px/22px var(--baseFont);
@@ -168,11 +169,12 @@ body {
 }
 .galeria-port{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 6px;
 }
 .imagen-port{
-  width: 30%;
+  width: 12%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -255,7 +257,7 @@ body {
 }
 .hover-galeria p{
   color: #fff;
-  font: var(--titulo5);
+  font: var(--titulo6);
   text-align: center;
   text-shadow: 3px 3px 0 var(--colorBlack);
 }
@@ -263,11 +265,18 @@ body {
   transform: scale(1);
 }
 /** Responsive de Habilidades */
+@media screen and (max-width: 1120px){
+  .imagen-port {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  }
+}
 @media screen and (max-width: 650px){
   .imagen-port {
-  width: 85%;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   }
 }
 /** Introduccion a Proyectos */
